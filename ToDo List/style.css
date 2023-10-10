@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(205deg, #3b004e, #06005f);
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    display: block;
+    width: 33%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 65px;
+}
+
+#to-do-heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#to-do-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    color: darkblue;
+    margin: 5px;
+    padding: 8px;
+}
+
+#to-do-heading img {
+    width: 35px;
+    height: 35px;
+}
+
+#search-bar {
+    margin-top: -10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#search-bar input[type=text] {
+    background-color: #cecece96;
+    color: black;
+    border: 0;
+    outline: 0;
+    padding: 11px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#search-bar button {
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    width: 80px;
+    padding: 11px;
+    background-color: rgb(40, 25, 210);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    position: absolute;
+    cursor: pointer;
+    right: 432px;
+
+}
+
+#search-bar button:hover {
+    background-color: red;
+    color: white;
+}
+
+#tasks-checklist {
+    position: relative;
+    left: 50px;
+}
+
+#tasks-checklist li {
+    list-style: none;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 5px;
+    user-select: none;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#tasks-checklist li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: url('Images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    right: 412px;
+    top: 8px;
+    cursor: pointer;
+}
+
+#tasks-checklist li.checked {
+    text-decoration: line-through;
+    color: rgb(58, 207, 28);
+    font-weight: bolder;
+}
+
+#tasks-checklist li.checked::before {
+    background: url('Images/checked.png');
+    background-size: cover;
+}
+
+#invalid-text {
+    font-size: 17px;
+    color: #ff0007;
+    margin-left: 18px;
+    font-family: cursive;
+    margin-top: -8px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+ul li span {
+    position: absolute;
+    right: 70px;
+    font-size: 28px;
+    top: -2px;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    height: 37px;
+    width: 37px;
+}
+
+ul li span:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 700px) and (max-width: 1070px) {
+    #search-bar button {
+        right: 283px;
+    }
+
+    #search-bar input[type=text] {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 777px) {
+    #search-bar input[type=text] {
+        width: 67%;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 900px) {
+    #search-bar input[type=text] {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    #search-bar input[type=text] {
+        width: 75%;
+    }
+}
