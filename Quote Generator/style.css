@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: #000150;
+}
+
+#container {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: grey 3px 3px 2px;
+    width: 39%;
+    height: 63%;
+    color: brown;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading {
+    font-family: cursive;
+    font-size: 2rem;
+    color: black;
+    margin: 20px;
+}
+
+#twitterIcon {
+    height: 14px;
+    width: 17px;
+}
+
+#quote {
+    font-size: 22px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: 900;
+    /* letter-spacing: 1px; */
+    font-family: cursive;
+}
+
+span {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 335px;
+    font-family: cursive;
+}
+
+span::before {
+    content: '~';
+    color: brown;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+#buttons button {
+    outline: none;
+    border: 3px solid black;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#buttons button:hover {
+    background-color: aqua;
+    color: rgb(0, 0, 54);
+}
+
+#btn2 img {
+    padding-right: 4px;
+}
+
+@media screen and (max-width: 1182px) {
+    #container {
+        width: 35%;
+        height: 60%;
+    }
+
+    #quote {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1155px){
+    span{
+        margin: 105px;
+    }
+}
