@@ -17,7 +17,7 @@ notesContainer.addEventListener('click',(event)=>{
         event.target.parentElement.remove();
         saveData();
     }
-    else if (event.target.tagName === 'p'){
+    else if (event.target.tagName === 'P'){
         inputText = document.querySelectorAll(".notes-content");
         inputText.forEach(i=>{
             i.onkeyup = () => {
