@@ -4,6 +4,7 @@ const lists_container = document.getElementById('tasks-checklist');
 const text = document.getElementById('invalid-text');
 
 button.addEventListener('click', ()=>{
+    //if nothing is entered in the inputBox
     if(inputBox.value === ''){
         text.innerHTML = 'You have to enter something!';
     }
@@ -13,6 +14,7 @@ button.addEventListener('click', ()=>{
         li.innerHTML = inputBox.value;
         lists_container.appendChild(li);
         let span = document.createElement('span');
+        //code to add multiplication sign
         span.innerHTML = '\u00d7';
         li.appendChild(span);
     }
@@ -31,6 +33,7 @@ inputBox.addEventListener('keypress',(event)=>{
 lists_container.addEventListener('click',(event) =>{
     if(event.target.tagName === 'LI'){
         event.target.classList.toggle('checked');
+        //allows saving of data in a new variable
         saveData();
     }
     else if(event.target.tagName === 'SPAN'){
