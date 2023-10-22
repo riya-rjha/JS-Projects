@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#upper{
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: -35px;
+}
+
+body{
+    background: linear-gradient(rgb(27, 32, 107), white);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#heading {
+    font-family: cursive;
+    padding-top: 80px;
+    margin: 10px;
+    font-size: 45px;
+}
+
+.container {
+    margin: 125px auto 0;
+    width: 26%;
+    text-align: center;
+    background-image: linear-gradient(rgb(108 108 108 / 80%), rgb(255 199 34 / 80%)), url(Images/background.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 3px 4px #373737;
+    height: 50vh;
+}
+
+#signs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+#signs img {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#signs img:nth-child(2) {
+    width: 65px;
+    height: 65px;
+}
+
+#signs img:hover {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+@media screen and (max-height:530px) {
+    .container {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-height:380px) {
+    .container {
+        height: 90vh;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:925px) {
+    .container {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 95vw;
+    }
+}
