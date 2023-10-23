@@ -51,7 +51,7 @@ const questions = [
 let qsIdx = 0;
 let score = 0;
 let question = document.getElementById('question');
-let ansBtn = document.getElementById('options');
+let ansBtn = document.getElementsByTagName('.options');
 let nextBtn = document.getElementById('next-btn');
 
 showQuestion = () => {
