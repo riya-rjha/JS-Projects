@@ -34,7 +34,7 @@ body {
     margin-top: 7px;
 }
 
-#options {
+.options {
     width: 100%;
     padding: 5px;
     margin-top: 15px;
@@ -62,7 +62,7 @@ body {
     display: none;
 }
 
-#options:hover{
+.options:hover{
     background-color: black;
     color: white;
 }
