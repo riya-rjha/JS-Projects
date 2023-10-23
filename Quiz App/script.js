@@ -51,7 +51,7 @@ const questions = [
 let qsIdx = 0;
 let score = 0;
 let question = document.getElementById('question');
-let ansBtn = document.getElementsByTagName('.options');
+let ansBtn = document.getElementById('quiz');
 let nextBtn = document.getElementById('next-btn');
 
 showQuestion = () => {
@@ -61,6 +61,7 @@ showQuestion = () => {
     let quesNo = qsIdx + 1;
     question.innerHTML = quesNo + ". " + questionValue.question;
 
+    //Show answers
     questionValue.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
