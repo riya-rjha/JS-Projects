@@ -1,12 +1,12 @@
-//Questions for quiz
+//quiz
 const questions = [
     {
-        question : "Which one of the following is the largest mammal on earth?",
+        question: "Which one of the following is the largest mammal on earth?",
         answers: [
-            {text:"Shark", check:"false"},
-            {text:"Blue Whale", check:"true"},
-            {text:"Elephant", check:"false"},
-            {text:"Giraffe", check:"false"}
+            { text: "Shark", check: "false" },
+            { text: "Blue Whale", check: "true" },
+            { text: "Elephant", check: "false" },
+            { text: "Giraffe", check: "false" }
         ]
     },
     {
@@ -54,7 +54,7 @@ let question = document.getElementById('question');
 let ansBtn = document.getElementById('quiz');
 let nextBtn = document.getElementById('next-btn');
 
-showQuestion = () => {
+const showQuestion = () => {
     //fetching question from questions json
     resetQuestion();
     let questionValue = questions[qsIdx];
@@ -70,7 +70,7 @@ showQuestion = () => {
     })
 }
 
-resetQuestion = () => {
+const resetQuestion = () => {
     nextBtn.style.display = "none";
     while (ansBtn.firstChild) {
         ansBtn.removeChild(ansBtn.firstChild);
@@ -78,7 +78,7 @@ resetQuestion = () => {
 }
 
 
-startQuiz = () => {
+const startQuiz = () => {
     qsIdx = 0;
     score = 0;
     nextBtn.innerHTML = 'Next';
