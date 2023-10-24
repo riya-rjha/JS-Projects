@@ -50,8 +50,9 @@ const questions = [
 //create two variables to check qsIndex and score
 let qsIdx = 0;
 let score = 0;
+//variables for questions, answers and next button
 let question = document.getElementById('question');
-let ansBtn = document.getElementById('quiz');
+let ansBtn = document.getElementById('quiz'); //answer options
 let nextBtn = document.getElementById('next-btn');
 
 const showQuestion = () => {
@@ -67,12 +68,18 @@ const showQuestion = () => {
         button.innerHTML = answer.text;
         button.classList.add("options");
         ansBtn.appendChild(button);
+        //check if answer is true or false
+        if(answer.check){
+            button.dataset.check = answer.check;
+        }
+        button.addEventListener('click', selectAnswer);
     })
 }
 
 const resetQuestion = () => {
     nextBtn.style.display = "none";
     while (ansBtn.firstChild) {
+        //removing every option and then adding new options
         ansBtn.removeChild(ansBtn.firstChild);
     }
 }
@@ -85,5 +92,52 @@ const startQuiz = () => {
     showQuestion();
 }
 
+const selectAnswer = (event) => {
+    const selectedAnswer = event.target;
+    const isCorrect = selectedAnswer.dataset.check === 'true';
+    if(isCorrect){
+        selectedAnswer.classList.add('correct');
+        score = score + 1;
+    }
+    else{
+        selectedAnswer.classList.add('incorrect');
+    }
+    //creating an array of all children of answers of options class
+    Array.from(ansBtn.children).forEach(answerBtn =>{
+        if(answerBtn.dataset.check === 'true'){
+            answerBtn.classList.add('correct');
+        }
+        answerBtn.disabled = true;
+    });
+    nextBtn.style.display = 'block';
+
+}
+
+showScore = () => {
+    resetQuestion();
+    question.innerHTML = `You scored ${score} out of ${questions.length} !`;
+    nextBtn.innerHTML = 'Play Again';
+    nextBtn.style.display = 'block';
+}
+
+handleNextBtn = () => {
+    qsIdx++;
+    if(qsIdx<questions.length){
+        showQuestion();
+    }
+    else{
+        showScore();
+    }
+}
+
+nextBtn.addEventListener('click', ()=>{
+    if(qsIdx<questions.length){
+        //if all questions not yet finished
+        handleNextBtn();
+    }else{
+        //if all questions finished
+        startQuiz();
+    }
+})
 
 startQuiz();
