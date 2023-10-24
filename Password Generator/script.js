@@ -24,5 +24,6 @@ btn.addEventListener('click', ()=>{
 
 imgCopy.addEventListener('click', ()=>{
     passwordBox.select();
+    //copies the current selection into the clipboard
     document.execCommand("copy");
 })
