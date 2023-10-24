@@ -62,7 +62,28 @@ body {
     display: none;
 }
 
-.options:hover{
+#next-btn:hover{
     background-color: black;
     color: white;
+}
+
+.options{
+    color: black;
+}
+
+.options:hover:not([disabled]) {
+    background-color: black;
+    color: white;
+}
+
+.options:hover:disabled{
+    cursor: not-allowed;
+}
+
+.correct {
+    background-color: rgb(140 222 16 / 70%);
+}
+
+.incorrect {
+    background-color: rgb(255 25 25 / 41%);
 }
