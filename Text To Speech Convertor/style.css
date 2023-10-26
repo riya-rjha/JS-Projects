@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #160D5E, #3C1462);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heading {
+    color: white;
+    font-size: 30px;
+}
+
+#heading span {
+    color: #F9426F;
+    border-bottom: 2px solid white;
+}
+
+#text {
+    width: 480px;
+    height: 245px;
+    margin-top: 35px;
+    border: 0;
+    outline: none;
+    background: #404188;
+    border-radius: 15px;
+    resize: none;
+    padding: 15px;
+    color: white;
+}
+
+#text::placeholder {
+    font-size: 11px;
+    padding: 3px;
+    color: white;
+}
+
+#listen {
+    border: 0;
+    outline: none;
+    background-color: #D73653;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    width: 95px;
+    cursor: pointer;
+}
+
+#listen:hover {
+    background-color: #db163a;
+}
+
+#imgLst {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin: 1px 5px -5px 0;
+}
+
+.buttons {
+    width: 500px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* provides gap between two flex items */
+    gap: 6px;
+}
+
+#selectBtn {
+    /* gives priority to occupy the remaining width of container or parent element */
+    flex: 1;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #363774;
+    border: 0;
+    outline: none;
+    appearance: none;
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 372px;
+    background-position-y: 13px;
+    color: white;
+}
