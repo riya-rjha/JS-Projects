@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="inputField" id="inptF">
+                    <input type="text" name="input" id="input">
+                </div>
+                <div class="numerics">
+                    <button>AC</button> 
+                    <button>DE</button>
+                    <button onclick="buttonClick('.')">.</button>
+                    <button onclick="buttonClick('/')">/</button>
+                </div>
+                <div class="buttons">
+                    <!-- 7 8 9 * -->
+                    <button onclick="buttonClick('7')">7</button>
+                    <button onclick="buttonClick('8')">8</button>
+                    <button onclick="buttonClick('9')">9</button>
+                    <button onclick="buttonClick('*')">*</button>
+                </div>
+                <div class="buttons">
+                    <!-- 4 5 6 - -->
+                    <button onclick="buttonClick('4')">4</button>
+                    <button onclick="buttonClick('5')">5</button>
+                    <button onclick="buttonClick('6')">6</button>
+                    <button onclick="buttonClick('-')">-</button>
+                </div>
+                <div>
+                    <button onclick="buttonClick('1')">1</button>
+                    <button onclick="buttonClick('2')">2</button>
+                    <button onclick="buttonClick('3')">3</button>
+                    <button onclick="buttonClick('+')">+</button>
+                </div>
+                <div class="buttons">
+                    <button onclick="buttonClick('00')">00</button>
+                    <button onclick="buttonClick('0')">0</button>
+                    <button id="equalSign" onclick="buttonClick('=')">=</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
