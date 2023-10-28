@@ -1,0 +1,83 @@
+/*  */
+/* #E6E4E6 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 150px;
+    background-image: linear-gradient(#00000087, #151414b3), url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+#coming {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+#heading-1 {
+    margin-top: 22px;
+    font-size: 40px;
+}
+
+#heading-2 {
+    margin-top: 8px;
+    font-size: 42px;
+}
+
+#going {
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#send-icon {
+    width: 30px;
+}
+
+.inp-img {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    padding: 5px;
+    width: 365px;
+}
+
+#email-id{
+    padding: 15px;
+    border: 0;
+    outline: none;
+    background-color: #E6E4E6;
+    flex: 1;
+}
+
+.inp-img button{
+    border: 0;
+    outline: none;
+    padding: 11px;
+    background-color: #509445;
+    cursor: pointer;
+}
+
+#email-id::placeholder{
+    font-size: 15px;
+}
+
+#thanks{
+    margin-top: 5px;
+    color: green;
+    font-weight: bolder;
+    padding: 3px;
+    display: block;
+}
