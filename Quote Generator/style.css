@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Roboto Slab', serif;
 }
 
 body {
-    background-color: #000150;
+    background-color: #00ffff69;
 }
 
 #container {
@@ -17,9 +19,9 @@ body {
     border: 2px solid white;
     border-radius: 8px;
     box-shadow: grey 3px 3px 2px;
-    width: 39%;
-    height: 63%;
-    color: brown;
+    width: 40%;
+    height: 55%;
+    color: #1f8800;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +30,6 @@ body {
 }
 
 #heading {
-    font-family: cursive;
     font-size: 2rem;
     color: black;
     margin: 20px;
@@ -41,19 +42,17 @@ body {
 
 #quote {
     font-size: 22px;
-    margin: 15px;
+    margin-top: -25px;
     padding: 15px;
     font-weight: 900;
-    /* letter-spacing: 1px; */
-    font-family: cursive;
 }
 
 span {
     float: right;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 335px;
-    font-family: cursive;
+    margin-top: -20px;
 }
 
 span::before {
@@ -67,15 +66,17 @@ span::before {
     justify-content: space-around;
     margin: 10px;
     margin-bottom: 15px;
+    gap: 35px;
 }
 
 #buttons button {
     outline: none;
-    border: 3px solid black;
+    border: 0;
     padding: 8px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 900;
+    background-color: #93ff8d;
 }
 
 #buttons button:hover {
@@ -85,25 +86,4 @@ span::before {
 
 #btn2 img {
     padding-right: 4px;
-}
-
-@media screen and (max-width: 1182px) {
-    #container {
-        width: 35%;
-        height: 60%;
-    }
-
-    #quote {
-        font-size: 15px;
-    }
-
-    span {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1155px){
-    span{
-        margin: 105px;
-    }
 }
