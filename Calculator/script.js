@@ -21,6 +21,8 @@ del.addEventListener('click', ()=>{
 
 let btn = document.getElementById('equalSign');
 btn.addEventListener('click', newFunc = () =>{
+    //created a function evaluate()
+    //instead of using eval(display.value)
      evaluate();
     setInterval(() => {
         if(display.value === ''){
