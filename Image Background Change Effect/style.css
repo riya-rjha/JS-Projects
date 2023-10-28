@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F9FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#transparent-img {
+    width: 100%;
+}
+
+.img-box {
+    width: 60%;
+    margin: auto;
+    background-image: url('Images/background.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.img-original {
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* to fix the width of original image on the top of transparent img */
+/* #original-img{
+    width: 100%;
+} */
+
+#arrow-img {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+span{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    height: 100%;
+    left: 20px;
+    top: 0;
+}
