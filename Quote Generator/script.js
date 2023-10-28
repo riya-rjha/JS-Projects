@@ -10,3 +10,8 @@ const getQuote = async(url)=>{
 }
 
 getQuote(api_url);
+
+const newQ = document.getElementById('btn1');
+newQ.addEventListener('click', ()=>{
+    location.reload();
+})
