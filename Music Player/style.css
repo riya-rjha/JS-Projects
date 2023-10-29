@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(white, black);
+}
+
+.music-player {
+    background: linear-gradient(0deg, rgb(255, 72, 72), rgb(63, 63, 255));
+    padding: 25px 5px;
+    width: 28%;
+    text-align: center;
+}
+
+.music-player nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 35px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(0, 0, 66);
+    padding: 5px 11px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px #d0ffd0;
+    cursor: pointer;
+}
+
+
+#thumbnail {
+    border-radius: 50%;
+    width: 200px;
+    height: 195px;
+    border: 8px solid white;
+}
+
+.music-player h1 {
+    font-size: 25px;
+    margin-top: 25px;
+    color: rgb(179, 240, 245);
+}
+
+.music-player p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 85%;
+    height: 6px;
+    margin: 25px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: aliceblue;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(99, 0, 99);
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgb(253, 197, 255);
+    border: 5px solid rgb(185, 249, 255);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 12px;
+}
+
+.btn {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 9px 12px;
+    cursor: pointer;
+    box-shadow: 1px 0px 4px whitesmoke;
+}
+
+.play {
+    font-size: 28px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 8px 17px;
+    cursor: pointer;
+    box-shadow: 1px 0px 2px whitesmoke;
+}
+
+.play i{
+    margin-left: 3px;
+}
