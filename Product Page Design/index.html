@@ -12,6 +12,11 @@
     <div class="container">
         <div class="left">
             <img src="Images/image1.png" class="img">
+            <div class="controls">
+                <span class="btn-gallery active"></span>
+                <span class="btn-gallery"></span>
+                <span class="btn-gallery"></span>
+            </div>
         </div>
         <div class="right">
             <h1>Casual T Shirt</h1>
@@ -44,27 +49,37 @@
                     </label>
                 </div>
                 <!-- Color-select -->
+                <!-- id of input tag and for of label tag should be same -->
                  <div class="color-select">
                     <p class="select-color">Color</p>
                     <label for="red">
-                        <input type="radio" name="color" >
+                        <input type="radio" name="color" id="red">
                         <span id="red"></span>
                     </label>
                     <label for="green">
-                        <input type="radio" name="color" >
+                        <input type="radio" name="color" id="green">
                         <span id="green"></span>
                     </label>
                     <label for="blue">
-                        <input type="radio" name="color" >
+                        <input type="radio" name="color" id="blue">
                         <span id="blue"></span>
                     </label>
                     <label for="pink">
-                        <input type="radio" name="color" >
+                        <input type="radio" name="color" id="pink">
                         <span id="pink"></span>
                     </label>
                 </div>
+                <div class="quantity-select">
+                    <p class="select">Quantity</p>
+                    <input type="number" name="quantity" id="quantity">
+                </div>
+                <div class="buy-now">
+                    <button id="buy" type="button">Buy Now</button>
+                </div>
             </form>
+
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
