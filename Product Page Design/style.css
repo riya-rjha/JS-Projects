@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #CEE8FF;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.img {
+    width: 285px;
+    height: 344px;
+}
+
+.left {
+    background-color: black;
+    box-shadow: 1px 0px 8px black;
+}
+
+.right {
+    background-color: white;
+    width: 30%;
+    height: 65%;
+    padding: 20px 45px;
+}
+
+.right h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.right h2 {
+    letter-spacing: 1px;
+    color: #717171;
+}
+
+.right h3 {
+    margin-top: 5px;
+    color: #26ba81;
+}
+
+.right p {
+    font-size: 18px;
+    margin-top: 22px;
+
+}
+
+.right form {
+    font-size: 20px;
+}
+
+.size-select,
+.color-select {
+    display: flex;
+    align-items: center;
+    color: rgb(89, 89, 89);
+}
+
+.select {
+    width: 85px;
+    color: black;
+    font-weight: bolder;
+}
+
+.size-select input {
+    margin-top: 38px;
+    display: none;
+}
+
+.size-select input:checked+span {
+    color: black;
+    font-weight: 900;
+}
+
+.size-select span {
+    margin-right: 8px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.size-select label {
+    margin-top: 18px;
+}
+
+.color-select {
+    display: flex;
+    align-items: center;
+}
+
+.color-select label {
+    margin-top: 25px;
+    cursor: pointer;
+    margin-right: 13px;
+}
+
+.color-select span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.color-select input:checked+span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.color-select input {
+    display: none;
+}
+
+.select-color {
+    width: 88px;
+    color: black;
+    font-weight: bolder;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: navy;
+}
+
+#pink {
+    background-color: hotpink;
+}
