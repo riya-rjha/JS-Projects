@@ -87,3 +87,45 @@ span::before {
 #btn2 img {
     padding-right: 4px;
 }
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    #container {
+        width: 80%;
+        left: 10%;
+    }
+    #author{
+        font-size: 20px;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container {
+        width: 90%;
+        left: 5%;
+    }
+
+    #author{
+        font-size: 16px;
+    }
+
+    #heading {
+        font-size: 1.5rem;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    span {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width : 1270px) {
+    #author{
+        font-size: 18px;
+        margin-right: 150px;
+    }
+}
