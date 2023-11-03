@@ -36,6 +36,6 @@ form.addEventListener('submit', (event)=>{
 })
 
 showMoreBtn.addEventListener('click', ()=>{
-    pgNo = pgNo+1;
+    pgNo = pgNo + 1;
     searchImage();
 })

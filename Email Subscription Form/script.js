@@ -3,7 +3,7 @@ const form = document.forms['submit-to-google-sheet'];
 let msg = document.getElementById('thanks');
 
 form.addEventListener('submit', func = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML = "Thankyou for subscribing!";

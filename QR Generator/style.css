@@ -78,6 +78,7 @@ body {
 
 .animationText{
     animation: shake .1s linear 10;
+    /* anim-name duration type times */
 }
 
 @keyframes shake {

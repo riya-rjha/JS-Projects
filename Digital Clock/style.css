@@ -44,6 +44,7 @@
     z-index: -1;
 }
 
+/* content is used to generate text dynamically during run-time */
 .container::after {
     content: '';
     width: 100px;

@@ -4,7 +4,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather??&q=";
 const getDetails = async (city_name) => {
     const details = await fetch(apiURL + city_name + `&appid=${apiKey}`);
     const data = await details.json();
-    console.log(data);
+    // console.log(data);
     if(details.status == 404){
         document.querySelector('#error-message').style.display="block";
         document.querySelector('#weather-details').style.display = "none";

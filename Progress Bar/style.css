@@ -48,14 +48,14 @@ circle {
     stroke-width: 20px;
     /* cover portions of circle by linear gradient using stroke-dasharray */
     stroke-dasharray: 472;
-    /* to remove some portions of circle usin stroke-dashoffset */
+    /* to remove some portions of circle using stroke-dashoffset */
     stroke-dashoffset: 472;
     animation: anim 2s linear forwards;
 }
 
 svg {
     position: absolute;
-    bottom: 134px;
+    bottom: 229px;
     right: 603px;
 }
 

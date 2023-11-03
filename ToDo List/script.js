@@ -14,12 +14,12 @@ button.addEventListener('click', ()=>{
         li.innerHTML = inputBox.value;
         lists_container.appendChild(li);
         let span = document.createElement('span');
-        //code to add multiplication sign
+        //code to add cross sign
         span.innerHTML = '\u00d7';
         li.appendChild(span);
     }
     inputBox.value = '';
-    saveData()
+    saveData();
 });
 
 inputBox.addEventListener('keypress',(event)=>{

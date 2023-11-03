@@ -1,5 +1,5 @@
 let productImg = document.querySelector('.img');
-let btn = document.getElementsByClassName('btn-gallery');
+let btn = document.getElementsByClassName('btn-gallery'); //returns array like object
 
     //this is not used with arrow functions
     btn[0].addEventListener('click', function(){
