@@ -43,6 +43,6 @@ btn.addEventListener('click', ()=>{
     result.innerHTML = `You are ${y3} years, ${m3} months and ${d3} days old `;
 })
 
-getDaysInMonth = () =>{
+getDaysInMonth = (year, month) =>{
     return new Date(year, month, 0).getDate();
 }
