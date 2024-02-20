@@ -16,10 +16,15 @@ header {
     background-color: rgba(128, 128, 128, 0.314);
 }
 
-.left i {
+.left img {
     color: rgb(0, 0, 60);
-    font-size: 30px;
+    width: 30px;
     margin-left: 20px;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
 }
 
 .right {
@@ -37,8 +42,8 @@ header {
 }
 
 nav img {
-    border-radius: 50%;
-    height: 150px;
+    width: 30px;
+    height: 30px;
 }
 
 .heading {
@@ -55,9 +60,13 @@ nav {
     justify-content: space-between;
 }
 
+.right p {
+    color: black;
+}
+
 .side-bar-nav {
     display: flex;
-    gap: 114px;
+    gap: 55px;
     margin-top: 50px;
     margin-right: 25px;
 }
@@ -82,3 +91,409 @@ nav {
     background-color: gray;
 }
 
+.write {
+    padding-right: 10px;
+    display: flex;
+    position: relative;
+    top: -92px;
+    right: -770px;
+}
+
+.write h3,
+.write p {
+    margin: 0;
+}
+
+.write p {
+    padding-bottom: 5px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 23px;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    padding-top: 20px;
+}
+
+#adv {
+    position: relative;
+    top: -48px;
+    left: 514px;
+    background-color: gainsboro;
+}
+
+section {
+    background-color: #2774C6;
+    height: 94px;
+}
+
+button {
+    outline: none;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search button {
+    background-color: #EE8A21;
+    color: white;
+}
+
+.search button:hover {
+    background-color: #e98111;
+}
+
+input {
+    padding: 13px;
+    width: 25%;
+    outline: none;
+}
+
+.write h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+#govt {
+    width: 100%;
+    height: 600px;
+}
+
+.dark-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.column {
+    width: 33.33%;
+    float: left;
+    padding: 0 20px;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column li {
+    color: gray;
+    cursor: pointer;
+}
+
+.column li:hover {
+    color: white;
+}
+
+.column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    clear: both;
+    color: white;
+    margin-top: 65px;
+    padding: 50px;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+button.hover-effect {
+    background-color: #80808094;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-bottom: -13px;
+    margin-top: 15px;
+}
+
+.news-box {
+    padding: 10px;
+    border: 1px solid #000;
+    margin-top: 9px;
+}
+
+.news-box ul {
+    padding: 0;
+}
+
+.news-box ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.initiatives {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.initiatives img {
+    max-width: 45%;
+}
+
+/* Additional styling for text */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.initiatives {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 75px;
+}
+
+.initiatives img {
+    width: 150px;
+    height: 85px;
+}
+
+.section2 {
+    background: #2A7AC0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.column-a,
+.column-b,
+.column-c {
+    flex: 1;
+    padding: 20px;
+}
+
+.column-a h2,
+.column-b h2 {
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.column-a p {
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.image-container img {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.view-details,
+.view-all {
+    background-color: transparent;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+#Transparency {
+    margin-top: 45px;
+}
+
+.flex {
+    display: flex;
+}
+
+.column-b ul {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.column-c {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.column-c .image-container {
+    margin-bottom: 20px;
+}
+
+.icons-class p {
+    color: black;
+}
+
+.about {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+#aboutIMG {
+    width: 145px;
+    height: 115px;
+}
+
+#History {
+    margin-top: -30px;
+}
+
+.schemes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.search-bar input[type="text"] {
+    position: relative;
+    top: -3px;
+    left: 14px;
+}
+
+button {
+    padding: 9px 16px;
+    background-color: #333;
+    background-color: #FDA103;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul.bullet-points {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+ul.bullet-points li {
+    list-style-type: disc;
+    margin-left: 80px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.number-box {
+    border: 2px solid black;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    left: 633px;
+    margin-bottom: 25px;
+}
+
+.number-box span {
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+#Image {
+    width: 180px;
+    height: 158px;
+    border-radius: 50%;
+    border: 7px solid grey;
+}
+
+.schemes p {
+    color: black;
+    width: 595px;
+    margin: auto;
+}
+
+.search-bar {
+    text-align: left;
+    margin-left: 45px;
+}
+
+.recruitment {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.in-focus-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.recruitment-heading {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.lorem-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#more {
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
