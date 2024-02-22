@@ -15,20 +15,19 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Flowers</a></li>
-                    <li><a href="#">Feedback Form</a></li>
+                    <li><a href="#aboutVV">About Us</a></li>
+                    <li><a href="#footerVV">Contact Us</a></li>
+                    <li><a href="#flowerVV">Flowers</a></li>
                 </ul>
             </nav>
             <section class="head">
-                <img src="Images/search.png" class="icons">
-                <img src="Images/user.png" class="icons">
-                <img src="Images/fav.png" class="icons">
-                <img src="Images/cart.png" class="icons">
+                <img src="Images/fav.png" class="icons" id="wishIcon">
+                <span class="wishlistCount">0</span>
+                <img src="Images/cart.png" class="icons" id="cartIcon">
             </section>
         </header>
     </div>
+
     <div class="bg-container">
         <div class="text">
             <h1>FloralFiesta</h1>
@@ -43,25 +42,188 @@
                 guarantees a
                 memorable celebration of the beauty of nature.
             </p>
-            <button>Discover More</button>
+            <button><a href="#aboutVV">Discover More</a></button>
         </div>
     </div>
-    <div class="products">
+
+    <div class="popUp">
+        <h2>Items Added to Wishlist</h2>
+        <p id="wish-text">
+
+        </p>
+    </div>
+    <div class="cartPopUp">
+        <h2>Items Added to Cart</h2>
+        <p id="cart-text">
+
+        </p>
+    </div>
+
+    <main class="about" id="aboutVV">
+        <h2>About Us</h2>
+        <div class="aboutUS">
+            <img src="Images/about1.jpg" class="about1">
+            <p><span>Introduction</span>
+                <br>
+                The website Violet Vista invites users to enter a world of floral elegance and charm where flowers
+                communicate loud and
+                clear. Violet Vista is an online platform that showcases a wide variety of floral products and services.
+                Its unique
+                offers are intended to inspire and enchant clients. The website is a virtual haven for flower
+                enthusiasts looking to add
+                the beauty of nature's blooms to their special occasions and celebrations. It offers everything from
+                colourful bouquets
+                to elaborate floral arrangements.
+            </p>
+        </div>
+        <div class="aboutUS">
+            <p><span>Mission</span>
+                <br>
+                Our goal at Violet Vista is to use the artistic medium of flowers to bring beauty and joy. It is a
+                straightforward but
+                meaningful aim. We aim to arouse feelings, bring back memories, and accentuate the beauty of life's most
+                treasured
+                moments with each and every flower design. Our dedication to quality encompasses the whole client
+                experience, not just
+                the things we sell. We strive to make every customer experience enjoyable, starting from the time they
+                visit our website
+                until their floral masterpiece is delivered.
+
+            </p>
+            <img src="Images/about2.jpg" class="about1" id="about2">
+        </div>
+        <div class="aboutUS">
+            <img src="Images/about3.jpg" class="about1" id="about3">
+            <p><span>Objectives</span>
+                <br>
+                A set of overarching goals form the foundation of Violet Vista's operations and inspire our dedication
+                to excellence.
+                Our main objective is to offer clients a broad variety of fresh and distinctive floral arrangements
+                suitable for a
+                number of events, such as weddings, anniversaries, business gatherings, and condolence messages. With
+                our user-friendly
+                online ordering and delivery services, we hope to simplify the process of choosing and buying flowers
+                for our clients so
+                they may effortlessly appreciate the beauty of flowers. By means of attractive photos and comprehensive
+                product
+                descriptions, our aim is to exhibit the proficiency of our skilled florists.
+            </p>
+        </div>
+        <div class="aboutUS">
+
+            <p><span>Values of Violet Vista (VVV)</span>
+                <br>
+                Our beliefs at Violet Vista form the basis of our company's philosophy and drive how we make decisions.
+                In order to
+                produce distinctive and impactful floral arrangements that provoke emotion and delight, we welcome
+                innovation and
+                artistic expression. Creativity is at the core of all we do. Since we are committed to finding the best
+                flowers and
+                materials, we don't compromise on quality. As a result, every product that leaves our studio is of the
+                greatest calibre
+                and radiates classic beauty.
+            </p>
+            <img src="Images/about4.jpg" class="about1" id="about4">
+        </div>
+    </main>
+
+    <div class="products" id="flowerVV">
         <h1>THE BLOSSOM BAZAAR</h1>
         <div class="flower-shop">
-            <img src="Images/f1.avif" class="flower">
-            <img src="Images/f2.avif" class="flower">
-            <img src="Images/f3.avif" class="flower">
-            <img src="Images/f4.avif" class="flower">
-            <img src="Images/f5.avif" class="flower">
-            <img src="Images/f6.avif" class="flower">
-            <img src="Images/f7.avif" class="flower">
-            <img src="Images/f8.avif" class="flower">
-            <img src="Images/f9.avif" class="flower">
+            <div class="addItems">
+                <img src="Images/f7.avif" class="flower">
+                <h2>Bleeding Heart</h2>
+                <p>Cost : 2.54$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f4.avif" class="flower">
+                <h2>Columbine</h2>
+                <p>Cost : 2.00$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f9.avif" class="flower">
+                <h2>Foxglove</h2>
+                <p>Cost : 6.34$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f2.avif" class="flower">
+                <h2>Sweet William</h2>
+                <p>Cost : 10.56$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f5.avif" class="flower">
+                <h2>Butterfly Bush</h2>
+                <p>Cost : 8.92$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f6.avif" class="flower">
+                <h2>Snapdragon</h2>
+                <p>Cost : 4.59$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f1.avif" class="flower">
+                <h2>Coneflower</h2>
+                <p>Cost : 7.26$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f8.avif" class="flower">
+                <h2>Forget-Me-Not</h2>
+                <p>Cost : 6.25$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+            <div class="addItems">
+                <img src="Images/f3.avif" class="flower">
+                <h2>Candytuft</h2>
+                <p>Cost : 3.20$</p>
+                <button class="wishlist">Add To Wishlist</button>
+                <button class="cart">Add To Cart</button>
+            </div>
         </div>
     </div>
 
 
+    <footer id="footerVV">
+        <div class="footer-column">
+            <h2>WEBSITE LINKS</h2>
+            <ul>
+                <li><a href="#">Cookie Settings</a></li>
+                <li><a href="#">Buy at 25% Discount</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Posting Guidelines</a></li>
+            </ul>
+            <p id="copyright">&copy; 2024 Violet Vista Pvt Ltd</p>
+        </div>
+        <div class="footer-column">
+            <h2>CUSTOMER SERVICE</h2>
+        </div>
+        <div class="footer-column">
+            <h2>FOLLOW VIOLET VISTA</h2>
+            <div class="social-icons">
+                <a href="#"><img src="./Images/fb.png" class="newIMG"></a>
+                <a href="#"><img src="./Images/insta.png" class="newIMG"></a>
+                <a href="#"><img src="./Images/twitter.png" class="newIMG"></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

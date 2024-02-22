@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(221, 160, 221, 0.157);
 }
@@ -70,7 +74,7 @@ nav ul li a:hover {
     width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     text-align: center;
 }
 
@@ -104,7 +108,7 @@ nav ul li a:hover {
 }
 
 .text button:hover {
-    background-color: rgb(179, 0, 179);
+    background-color: rgb(150, 0, 150);
 }
 
 #flowerHeading {
@@ -122,13 +126,166 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
+.products h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
 .flower {
     width: 320px;
     height: 320px;
-    border: 2px solid red;
+    border: 8px solid rgba(128, 0, 128, 0.446);
+    border-radius: 8px;
     margin: 20px;
 }
 
+.flower-shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.addItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.addItems h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2a0056;
+}
+
+.addItems p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.wishlist,
+.cart {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid purple;
+    padding: 4px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #9370db6e;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    transition: all .3s;
+}
+
+.wishlistCount {
+    position: relative;
+    top: -14px;
+    font-size: 20px;
+}
+
+.wishlist:hover,
+.cart:hover {
+    background-color: mediumorchid;
+    color: white;
+}
+
+button a {
+    font-size: 22px;
+    color: wheat;
+    text-decoration: none;
+}
+
+.about {
+    margin-top: 65px;
+    margin-bottom: 75px;
+}
+
+.about h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.about1 {
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.aboutUS {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.aboutUS p {
+    font-size: 20px;
+}
+
+.aboutUS p span {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.aboutUS p:nth-child(odd) {
+    margin-left: 32px;
+}
+
+.aboutUS:nth-child(even) {
+    margin-left: 32px;
+}
+
+.aboutUS:nth-child(odd) {
+    margin-right: 32px;
+}
+
+footer {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-column {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.footer-column:last-child {
+    border-right: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    color: purple;
+}
 
 /* All Media Queries */
 @media only screen and (max-width: 1050px) {
@@ -149,6 +306,26 @@ nav ul li a:hover {
 
     .bg-container {
         min-width: 755px;
+        background-size: contain;
+    }
+
+    .flower-shop {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 125px;
+    }
+
+    .text {
+        width: 90%;
+        padding-top: 450px;
+    }
+
+    .text h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .text p {
+        font-size: 16px;
     }
 }
 
@@ -170,18 +347,72 @@ nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 950px) and (max-width: 1200px) {
+    .flower-shop {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+    .flower-shop {
+        margin-left: 450px;
+    }
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 1200px) {
+    .about {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about1,
+    #about2,
+    #about3,
+    #about4 {
+        width: 350px;
+        height: 250px;
+    }
+
     .text {
-        width: 90%;
-        padding-top: 450px;
+        padding-top: 200px;
     }
 
     .text h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 45px;
+        margin-bottom: 45px;
     }
 
     .text p {
-        font-size: 16px;
+        font-size: 18px;
     }
+
+    .bg-container {
+        height: 800px;
+    }
+}
+
+.text-enlarge {
+    font-size: 20px;
+    color: rebeccapurple;
+}
+
+.popUp,
+.cartPopUp {
+    position: fixed;
+    top: 130px;
+    right: 65px;
+    visibility: hidden;
+    padding: 20px;
+    background-color: white;
+    border-radius: 18px;
+}
+
+.popUp p,
+.cartPopUp p {
+    font-size: 22px;
 }
