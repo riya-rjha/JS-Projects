@@ -15,6 +15,7 @@ html {
 
 body {
     background-color: rgba(221, 160, 221, 0.157);
+    min-width: fit-content;
 }
 
 .full-container {
@@ -144,6 +145,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
+    margin: 40px;
 }
 
 .addItems {
@@ -311,7 +313,6 @@ footer {
 
     .flower-shop {
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 125px;
     }
 
     .text {
@@ -344,18 +345,6 @@ footer {
     .text h1 {
         font-size: 40px;
         margin-bottom: 40px;
-    }
-}
-
-@media only screen and (min-width: 950px) and (max-width: 1200px) {
-    .flower-shop {
-        margin-left: 150px;
-    }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 950px) {
-    .flower-shop {
-        margin-left: 450px;
     }
 }
 
@@ -415,4 +404,60 @@ footer {
 .popUp p,
 .cartPopUp p {
     font-size: 22px;
+}
+
+
+/* Ham Burger Menu */
+#hamburger {
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#navContainer {
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 456px;
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+#navContainer ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:750px) and (max-width: 2000px) {
+    #navContainer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #navContainer {
+        left: 395px;
+        top: 155px;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        transition: all 0.3s ease;
+    }
+
+    #navContainer ul {
+        list-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 42px;
+        width: 200px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #navigation {
+        display: none;
+    }
 }

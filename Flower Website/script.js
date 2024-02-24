@@ -56,3 +56,14 @@ cart.addEventListener('click', () => {
         cartPopUp.style.visibility = 'visible';
     }
 });
+
+const navContainer = document.getElementById('navContainer');
+const hamburger = document.getElementById('hamburger');
+
+hamburger.addEventListener('click', () => {
+    if (navContainer.style.display === 'none') {
+        navContainer.style.display = 'block';
+    } else {
+        navContainer.style.display = 'none';
+    }
+})
