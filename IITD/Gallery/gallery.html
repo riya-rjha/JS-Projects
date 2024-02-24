@@ -4,8 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Image Grid</title>
     <link rel="stylesheet" href="../About Us/about.css">
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 200px;
+            margin-top: 45px;
+            margin-left: 65px;
+        }
+
+        h1 {
+            POSITION: relative;
+            top: 160px;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bolder;
+        }
+
+        .image-grid img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,34 +47,20 @@
         </ul>
         <img src="../Images/search-icon.png" class="search">
     </nav>
-
-    <div class="about-us-container">
-        <h1 class="about-us-heading">UG Admissions 2023 - 2024</h1>
-        <p>Home &gt; Admissions &gt; PG Admissions 2023 - 2024</p>
-
-        <h2 class="about-us-heading">UG Admissions (1st Semester 2023-24) for Btech/BSc</h2>
-        <ul class="about-us-bullet-points">
-            <li>Advertisement. Hindi | English</li>
-            <li>Information Brochure</li>
-            <li>Apply Now for UG Admissions including Masters</li>
-            <li>Frequently Asked Questions (FAQ) for UG Application</li>
-            <li>Regarding Hostel Accommodation</li>
-        </ul>
-
-        <h2 class="about-us-heading">IMPORTANT INSTRUCTIONS FOR PROCEDURE OF ADMISSION AND REGISTRATION</h2>
-        <ul class="about-us-bullet-points">
-            <li>Welcome Letter from the Director</li>
-            <li>Greetings from the Dean of Student Affairs</li>
-            <li>Important Guidelines for Online Document and Form Submission</li>
-            <li>Checklist of Documents and Forms to be Uploaded</li>
-            <li>Undertaking for Admission Session 2023-24</li>
-            <li>Medical Certificate Format</li>
-        </ul>
-
-        <h2 class="about-us-heading">PROCEDURE FOR REGISTRATION & ORIENTATION</h2>
-        <ul class="about-us-bullet-points">
-            <li>Important Instructions and Procedure for Registration and Orientation</li>
-        </ul>
+    <h1>PHOTO GALLERY</h1>
+    <div class="image-grid">
+        <img src="../Images/c1.jpg" alt="Image 1">
+        <img src="../Images/c2.jpg" alt="Image 2">
+        <img src="../Images/c3.jpg" alt="Image 3">
+        <img src="../Images/c4.jpg" alt="Image 4">
+        <img src="../Images/c5.jpg" alt="Image 5">
+        <img src="../Images/c6.jpg" alt="Image 6">
+        <img src="../Images/c7.jpg" alt="Image 7">
+        <img src="../Images/c8.jpg" alt="Image 8">
+        <img src="../Images/c9.avif" alt="Image 9">
+        <img src="../Images/c1.jpg" alt="Image 10">
+        <img src="../Images/c11.jpg" alt="Image 11">
+        <img src="../Images/c12.jpg" alt="Image 12">
     </div>
 
     <!-- Footer -->
