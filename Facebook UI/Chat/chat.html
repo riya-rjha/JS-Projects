@@ -5,89 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Messenger Chat UI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-
-        .sidebar {
-            width: 250px;
-            background-color: #f0f2f5;
-            border-right: 1px solid #ccc;
-            padding: 20px;
-        }
-
-        .chat-section {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        .chat-bubble {
-            max-width: 70%;
-            margin-bottom: 20px;
-            padding: 10px 15px;
-            border-radius: 20px;
-        }
-
-        .incoming {
-            background-color: #e4e6eb;
-            align-self: flex-start;
-        }
-
-        .outgoing {
-            background-color: #0084ff;
-            color: #fff;
-            align-self: flex-end;
-        }
-
-        .message-input {
-            width: calc(100% - 40px);
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-        }
-
-        .send-button {
-            width: 40px;
-            height: 40px;
-            background-color: #0084ff;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="chat.css">
 </head>
 
 <body>
 
     <div class="container">
+        
         <div class="sidebar">
             <h2>Contacts</h2>
             <ul>
-                <li>Friend 1</li>
-                <li>Friend 2</li>
-                <li>Friend 3</li>
-                <!-- Add more contacts as needed -->
+                <li><img src="../Images/user_1077114.png" class="img-contact">Friend 1</li>
+                <li><img src="../Images/user_1077114.png" class="img-contact">Friend 2</li>
+                <li><img src="../Images/user_1077114.png" class="img-contact">Friend 3</li>
+                <li><img src="../Images/user_1077114.png" class="img-contact">Friend 4</li>
+                <li><img src="../Images/user_1077114.png" class="img-contact">Friend 5</li>
             </ul>
         </div>
         <div class="chat-section">
             <div class="chat-bubble incoming">Hello there!</div>
             <!-- https://www.freepik.com/free-photo/high-angle-adult-searching-stock-images-laptop_40132748.htm#fromView=search&page=1&position=13&uuid=7da283b4-1843-42b6-8298-4acaccd4b455 -->
-            <div class="chat-bubble outgoing">Hi! How can I help you?</div>
+            <div class="chat-bubble outgoing">Hi! What's going on?</div>
+            <div class="chat-bubble incoming">Hey I just got a new laptop! Wait sending the picture!</div>
+            <div class="chat-bubble incoming"><img src="../Images/lappy.jpg" class="img"></div>
+            <div class="chat-bubble outgoing">That's amazing! How much did it cost?</div>
+            <div class="chat-bubble incoming">Got it in an offer! An amazing one at such an affordable prize!</div>
+            <div class="chat-bubble outgoing">That's amazing! Double productivity at work assured then? Haha!!</div>
+            <div class="chat-bubble incoming">Haha 😂 Definitely!!</div>
+
             <!-- More chat bubbles go here -->
             <div class="message-input-container">
                 <input type="text" class="message-input" placeholder="Type a message...">
-                <button class="send-button">Send</button>
+                <button class="send-button">-></button>
             </div>
         </div>
     </div>
