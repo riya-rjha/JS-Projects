@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../Home/home.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <header id="head">
+        <div class="container">
+            <div class="logo">
+                <p id="heading">E Commerce </p>
+
+                <img src="../Images/logo.avif" id="logo">
+                <!-- https://www.freepik.com/free-vector/flat-design-bookstore-logo-template_23788731.htm#fromView=search&page=1&position=1&uuid=9e037a11-80b4-4d29-9c3d-1fe1e4124e80 -->
+            </div>
+            <div class="inp-container">
+                <button class="gray-button">All</button>
+                <input type="text" class="input-field" placeholder="Type something...">
+                <img src="../Images/inpt.png" alt="Example Image">
+                <!-- https://www.freepik.com/icon/loupe_428094#fromView=search&page=1&position=0&uuid=332e8326-1605-445b-9281-bf969b4c88ac -->
+            </div>
+            <div class="user">
+
+                <p>Sign In</p>
+                <!-- https://cdn-icons-png.freepik.com/256/891/891462.png?ga=GA1.1.1140465832.1708154190& -->
+                <img src="../Images/cart.png" id="cart-img">
+                <img src="../Images/location.png" id="cart-img">
+                <!-- https://cdn-icons-png.freepik.com/256/7856/7856126.png?ga=GA1.1.1140465832.1708154190& -->
+                <img src="../Images/login.png" id="cart-img">
+                <!-- https://www.freepik.com/icon/location_1243420#fromView=search&page=1&position=4&uuid=6762ab92-a933-4d87-91d0-96c90558d58d -->
+                <!-- https://cdn-icons-png.freepik.com/256/819/819814.png?ga=GA1.1.1140465832.1708154190& -->
+            </div>
+            <p id="return">Returns & Orders</p>
+        </div>
+    </header>
+
+    <nav class="unique-nav">
+        <ul>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Buy Again</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+    </nav>
+    <!-- https://www.freepik.com/free-photo/online-fashion-shopping-with-computer_42088044.htm#fromView=search&page=1&position=3&uuid=cdaab177-a548-4401-a6b6-7f726db814ca -->
+
+
+    <div class="unique-container">
+        <h2 class="heading">Shopping Cart</h2>
+        <p class="deselect">Deselect all items</p>
+        <hr class="line">
+        <div class="checklist">
+            <input type="checkbox" id="item1" name="item1" value="item1">
+            <label for="item1">Book</label><br>
+            <input type="checkbox" id="item2" name="item2" value="item2">
+            <label for="item2">Necklace</label><br>
+        </div>
+        <div class="item-details">
+            <img src="../Images/book.jpg" id="book">
+            <h2>Death on the Railway, Second Edition</h2>
+            <p style="    margin-top: -7px;
+    margin-bottom: 5px;
+    color: green;
+    font-size: 20px;">By Manuel Rose</p>
+            <p>Paperback</p>
+            <p style="    margin-top: 25px;
+    margin-bottom: 12px; color: darkred">Only 19 left in stock - order soon.</p>
+            <button class="quantity">Quantity: 1</button>
+            <div class="options">
+                <button>Delete</button>
+                <button>Save for Later</button>
+                <button>Find similar items</button>
+                <button>Share</button>
+            </div>
+            <p style="color: black;">Price: $15.52</p>
+        </div>
+        <div class="item-details" id="second">
+            <img src="../Images/necklace.jpg" id="book">
+            <h2>Pure diamond Necklace</h2>
+            <p style="    margin-top: -7px;
+    margin-bottom: 5px;
+    color: green;
+    font-size: 20px;">By Rosy Ross</p>
+            <p>Real Diamonds</p>
+            <p style="    margin-top: 25px;
+    margin-bottom: 12px; color: darkred">Only 1 left in stock - Hurry Up!</p>
+            <button class="quantity">Quantity: 1</button>
+            <div class="options">
+                <button>Delete</button>
+                <button>Save for Later</button>
+                <button>Find similar items</button>
+                <button>Share</button>
+            </div>
+            <p style="color: black;">Price: $100.00</p>
+        </div>
+        <p style="margin-top: -85px; font-weight: bold; color: black; font-size: 28px;">Subtotal (Price): $115.52</p>
+    </div>
+    <section class="recent">
+        <h2>You recently viewed items</h2>
+        <div class="item">
+            <img src="../Images/headphon.avif" id="headphones">
+            <div class="item-details-2">
+                <p>BoAt Headphones</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+                <p>Price: $14.65</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h1> <a href="#head">Back To Top</a></h1>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About XYZ Commerce</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">XYZ Commerce Devices</a></li>
+                    <li><a href="#">XYZ Commerce Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products on XYZ Commerce</a></li>
+                    <li><a href="#">Sell on XYZ Commerce Business</a></li>
+                    <li><a href="#">Sell apps on XYZ Commerce</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                    <li><a href="#">Host an XYZ Commerce Hub</a></li>
+                    <li><a href="#">See More Make Money with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Amazon Payment Products</h3>
+                <ul>
+                    <li><a href="#">XYZ Commerce Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">XYZ Commerce Currency Converter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

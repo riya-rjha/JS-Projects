@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    border-bottom: 2px solid white;
+}
+
+body {
+    background-color: #232F3E;
+}
+
+.about-us {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.about-us h1 {
+    width: 100%;
+    margin-left: 100px;
+    font-weight: 600;
+    color: white;
+}
+
+.about-us p {
+    margin-right: 200px;
+}
+
+footer {
+    margin-top: 150px;
+}
+
+footer h1 {
+    border-top: 2px solid white;
+}
+
+.weird-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.weird-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weird-heading {
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#biker {
+    width: 80%;
+    padding: 45px;
+    margin-left: 10%;
+    border-radius: 50px;
+}
+
+.weird-text {
+    margin-top: 10px;
+    text-align: left;
+    color: black;
+}
+
+.weird-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weird-button:hover {
+    background-color: #0056b3;
+}
