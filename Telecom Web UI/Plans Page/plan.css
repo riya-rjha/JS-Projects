@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bizarre-container {
+    margin: 20px;
+}
+
+.bizarre-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 19px;
+}
+
+.bizarre-table th,
+.bizarre-table td {
+    padding: 10px;
+    border: 3px solid #dddddd;
+    text-align: left;
+}
+
+.bizarre-table th {
+    background-color: navy;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.feature-column {
+    width: 30%;
+}
+
+.feature-row {
+    font-weight: bold;
+}
+
+.plan-table h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+.promo-offers,
+.note {
+    margin-top: 20px;
+    padding: 35px;
+}
+
+.promo-heading,
+.note-heading {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.promo-para {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.note-list {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+}
