@@ -9,3 +9,244 @@ html {
     font-weight: 400;
     font-style: normal;
 }
+
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.hero .container {
+    display: flex;
+    gap: 100px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 14px;
+    width: 70%;
+    border-radius: 20px;
+    border: 3px solid gainsboro;
+    font-size: 18px;
+}
+
+.search-container button {
+    padding: 17px 27px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.search-container button:hover {
+    background-color: #555;
+}
+
+.spotlight {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.spotlight-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.spotlight-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.spotlight-container p {
+    font-size: 22px;
+}
+
+.spotlight-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 45px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+.spotlight-container button:hover {
+    background-color: #555;
+}
+
+.testimonial-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.testimonial-box {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial-box img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p {
+    font-size: 16px;
+}
+
+.awards {
+    background-color: #00001a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.awards ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.awards ul li {
+    margin-bottom: 10px;
+}
+
+.hero-heading {
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.hero-subheading {
+    color: rgb(94, 0, 28);
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.hero-image {
+    width: 525px;
+    height: 403px;
+    border-radius: 50px;
+}
+
+.spotlight .container {
+    display: flex;
+    gap: 90px;
+    margin-top: 105px;
+}
+
+.container {
+    width: 95%;
+}
+
+.testimonial img {
+    width: 145px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+.testimonials .container {
+    display: flex;
+    gap: 50px;
+}
+
+.testimonial {
+    background-color: #000057ad;
+    padding: 30px;
+    border-radius: 13px;
+}
+
+.testimonial-feedback {
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+}
+
+.awards-heading {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.awards-description {
+    font-size: 20px;
+    color: white;
+    margin-top: 45px;
+}
+
+.award-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 65px;
+}
+
+.award-img img {
+    width: 25%;
+    height: 65%;
+    border-radius: 20px;
+}
