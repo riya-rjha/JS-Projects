@@ -406,14 +406,6 @@ footer {
     font-size: 22px;
 }
 
-
-/* Ham Burger Menu */
-#hamburger {
-    width: 35px;
-    cursor: pointer;
-    display: none;
-}
-
 #navContainer {
     display: none;
     position: absolute;
@@ -430,37 +422,9 @@ footer {
     font-size: 20px;
 }
 
-@media only screen and (min-width:750px) {
-    #navContainer {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 750px) {
-    #navContainer {
-        left: 395px;
-        top: 155px;
-        background-color: rgb(255, 255, 255);
-        position: fixed;
-        transition: all 0.3s ease;
-        margin-right: 45px;
-        margin-left: -345px;
-        width: -webkit-fill-available;
-    }
 
-    #navContainer ul {
-        list-style: none;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 42px;
-        width: 200px;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    #navigation {
-        display: none;
-    }
+.addItems:hover {
+    transform: scale(1.03);
+    transition: all .4s;
 }

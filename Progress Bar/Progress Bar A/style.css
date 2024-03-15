@@ -1,0 +1,45 @@
+/* Water filling animation */
+#water {
+    background-color: #e91e63;
+    animation: water-fill 2s infinite forwards alternate;
+}
+
+/* Horizontal scroll bar animation */
+.w-96 {
+    animation: scroll 2s infinite linear forwards alternate;
+}
+
+@keyframes water-fill {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Circular progress bar */
+circle {
+    fill: none;
+    stroke: url('#GradientColor');
+    stroke-width: 20px;
+    stroke-dasharray: 520;
+    stroke-dashoffset: 520;
+}
+
+svg {
+    position: relative;
+    position: relative;
+    top: -160px;
+}

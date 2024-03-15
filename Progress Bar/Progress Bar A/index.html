@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-green-100">
+    <div class="flex justify-center h-screen mt-40 gap-14">
+        <!-- Circular progress bar -->
+        <div class="mx-4">
+            <div id="progressContainer"
+                class="bg-white shadow-xl rounded-full w-40 h-40 flex items-center justify-center">
+                <div id="progressCircle"
+                    class="bg-white rounded-full w-24 h-24 flex items-center justify-center shadow-inner">
+                    <div id="progressText" class="text-2xl font-bold">0%</div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop id="gradientStart" offset="0%" stop-color="#e91e63" />
+                        <stop id="gradientEnd" offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle id="progressBar" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <!-- Water filling bowl animation -->
+        <div class="mx-4">
+            <div class="relative w-40 h-40 overflow-hidden">
+                <div class="absolute bottom-0 w-full bg-gradient-to-t from-pink-500 to-purple-700 h-1/2" id="water">
+                </div>
+            </div>
+        </div>
+        <!-- Horizontal scroll bar animation -->
+        <div class="mx-4">
+            <div class="w-90 h-40 bg-gray-200 overflow-x-auto">
+                <div class="w-96 h-10 bg-gradient-to-r from-pink-500 to-purple-700"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -28,8 +28,10 @@ html {
 }
 
 .bizarre-table th {
-    background-color: navy;
-    color: white;
+    background-color: #343a40;
+    /* Dark gray */
+    color: #ffffff;
+    /* White */
     font-size: 30px;
     font-weight: 600;
 }
@@ -54,18 +56,24 @@ html {
 .note {
     margin-top: 20px;
     padding: 35px;
+    background-color: #f8f9fa;
+    /* Light gray */
 }
 
 .promo-heading,
 .note-heading {
     font-size: 32px;
     font-weight: bold;
+    color: #333;
+    /* Dark gray */
 }
 
 .promo-para {
     font-size: 22px;
     line-height: 1.5;
     margin-top: 10px;
+    color: #555;
+    /* Gray */
 }
 
 .note-list {

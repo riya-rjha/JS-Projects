@@ -3,17 +3,17 @@ const count = document.querySelector('.wishlistCount');
 const popUp = document.querySelector('.popUp');
 const text = document.getElementById('wish-text');
 let idx = parseInt(count.innerHTML);
-const addedFlowers = new Set();
+const addedShoes = new Set();
 
 wishlistButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        const flowerContainer = e.target.closest('.addItems');
-        const flowerName = flowerContainer.querySelector('h2').textContent;
-        if (!addedFlowers.has(flowerName)) {
-            const item = `${flowerName}`;
+        const shoeContainer = e.target.closest('.addItems');
+        const shoeName = shoeContainer.querySelector('h2').textContent;
+        if (!addedShoes.has(shoeName)) {
+            const item = `${shoeName}`;
             text.classList.add('text-enlarge');
             text.innerHTML += `<div>${item}</div>`;
-            addedFlowers.add(flowerName);
+            addedShoes.add(shoeName);
             idx++;
             count.innerHTML = idx;
         }
@@ -32,18 +32,18 @@ fav.addEventListener('click', () => {
 const cartBtn = document.querySelectorAll('.cart');
 const cartPopUp = document.querySelector('.cartPopUp');
 const cartText = document.getElementById('cart-text');
-const addedFlowersToCart = new Set();
+const addedShoesToCart = new Set();
 
 cartBtn.forEach(button => {
     button.addEventListener('click', (e) => {
         const cartContainer = e.target.closest('.addItems');
-        const flowerName = cartContainer.querySelector('h2').textContent;
+        const shoeName = cartContainer.querySelector('h2').textContent;
         const flowerCost = cartContainer.querySelector('p').textContent;
-        if (!addedFlowersToCart.has(flowerName)) {
-            const item = `${flowerName} - Cost : ${flowerCost}`;
+        if (!addedShoesToCart.has(shoeName)) {
+            const item = `${shoeName} - Cost : ${flowerCost}`;
             cartText.classList.add('text-enlarge');
             cartText.innerHTML += `<div>${item}</div>`;
-            addedFlowersToCart.add(flowerName);
+            addedShoesToCart.add(shoeName);
         }
     });
 });
@@ -57,13 +57,3 @@ cart.addEventListener('click', () => {
     }
 });
 
-const navContainer = document.getElementById('navContainer');
-const hamburger = document.getElementById('hamburger');
-
-hamburger.addEventListener('click', () => {
-    if (navContainer.style.display === 'none') {
-        navContainer.style.display = 'block';
-    } else {
-        navContainer.style.display = 'none';
-    }
-})
