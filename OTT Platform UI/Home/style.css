@@ -1,0 +1,314 @@
+body {
+    background-color: rgba(0, 0, 0, 0.711);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+.header {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    border-bottom: 8px solid #4CAF50;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    /* Logo at left and button at right */
+    justify-content: space-between;
+    padding: 19px 50px;
+}
+
+.text-col h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-col p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border-radius: 5px;
+    outline: 0;
+    /* To get space between buttons */
+    margin-left: 13px;
+    background: transparent;
+    color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(64, 65, 64);
+}
+
+.langBTN {
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.langBTN img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.signBTN {
+    background-color: rgb(139, 0, 139);
+    border: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.header-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.email-signup {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+
+.email-signup button {
+    background: rgb(139, 0, 139);
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/* ---------Features------- */
+
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-weight: 800;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4CAF50;
+    /* Green title color */
+}
+
+.dropdownList {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.dropdownList li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.dropdownList li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: gainsboro;
+    /* Dark gray background */
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    /* White text color */
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+/* To hide the radio icons due to radio button of input */
+input[type="radio"] {
+    display: none;
+}
+
+/* Creating utility classes */
+.dropdownList .content {
+    background: gainsboro;
+    /* Dark gray background */
+    text-align: left;
+    padding: 0 20px;
+    /* All details will be hidden */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.dropdownList input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.dropdownList input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+
+/* FAQ Section email signup button */
+/* Second button after the one in header */
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small {
+    font-size: 20px;
+}
+
+.content p {
+    color: darkgreen;
+}
+
+/* --------Footer------------- */
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #4CAF50;
+    /* Green border */
+    color: #bbbbbb;
+    /* Dark gray text color */
+    font-weight: 700;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    /* White text color */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .langBTN {
+    color: #FFFFFF;
+    /* White text color */
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    /* Green background color */
+    border: none;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
