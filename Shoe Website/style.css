@@ -72,6 +72,7 @@ nav ul li a:hover {
 
 .bg-container {
     background-image: url('Images/bg2.avif');
+    /* htt ps://img.freepik.com/free-vector/abstract-watercolor-background_23-2149038179.jpg?size=626&ext=jpg&ga=GA1.1.1140465832.1708154190&semt=ais */
     width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
@@ -112,7 +113,7 @@ nav ul li a:hover {
     background-color: rgb(150, 0, 150);
 }
 
-#flowerHeading {
+#shoeHeading {
     font-size: 25px;
     font-style: italic;
     color: purple;
@@ -133,15 +134,15 @@ nav ul li a:hover {
     margin-bottom: 25px;
 }
 
-.flower {
-    width: 320px;
+.shoe {
+    width: 360px;
     height: 320px;
     border: 8px solid rgba(128, 0, 128, 0.446);
     border-radius: 8px;
     margin: 20px;
 }
 
-.flower-shop {
+.shoe-shop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
@@ -311,7 +312,7 @@ footer {
         background-size: contain;
     }
 
-    .flower-shop {
+    .shoe-shop {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -427,4 +428,20 @@ footer {
 .addItems:hover {
     transform: scale(1.03);
     transition: all .4s;
+}
+
+.take-to-top {
+    margin-bottom: -50px;
+    background-color: #cdcdcd;
+    padding: 6px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.take-to-top a {
+    text-decoration: none;
+    color: black;
 }

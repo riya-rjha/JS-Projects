@@ -38,9 +38,9 @@ cartBtn.forEach(button => {
     button.addEventListener('click', (e) => {
         const cartContainer = e.target.closest('.addItems');
         const shoeName = cartContainer.querySelector('h2').textContent;
-        const flowerCost = cartContainer.querySelector('p').textContent;
+        const shoeCost = cartContainer.querySelector('p').textContent;
         if (!addedShoesToCart.has(shoeName)) {
-            const item = `${shoeName} - Cost : ${flowerCost}`;
+            const item = `${shoeName} - Cost : ${shoeCost}`;
             cartText.classList.add('text-enlarge');
             cartText.innerHTML += `<div>${item}</div>`;
             addedShoesToCart.add(shoeName);
