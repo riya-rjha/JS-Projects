@@ -4,14 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Filling Animation</title>
+    <title>Horizontal Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="bowl-container">
-        <div class="water-bowl"></div>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8 mt-20">Horizontal Scroll Animation</h1>
+        <div class="flex justify-center items-center">
+            <div class="w-96 h-40 bg-gray-200 overflow-x-auto relative rounded-lg shadow-lg">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-700 animate-scroll rounded-lg">
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold">
+                    Scrolling Content</div>
+            </div>
+        </div>
+        <p class="text-center mt-8 text-gray-600">This is a horizontal animation with gradient effect.</p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
