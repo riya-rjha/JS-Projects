@@ -7,9 +7,13 @@ document.getElementById('submitButton').addEventListener('click', async () => {
         const response = await fetch(apiURL);
         const data = await response.json();
 
+        const kelvinToCelsius = (kelvin) => {
+            return kelvin - 273.15;
+        };
+
         document.getElementById('cityName').textContent = cityInput;
-        document.getElementById('minTemp').innerHTML = `Min Temperature : <span class="text-white">${data.main.temp_min} °F</span>`;
-        document.getElementById('maxTemp').innerHTML = `Max Temperature : <span class="text-white">${data.main.temp_max} °F</span>`;
+        document.getElementById('minTemp').innerHTML = `Min Temperature : <span class="text-white">${kelvinToCelsius(data.main.temp_min).toFixed(2)} °C</span>`;
+        document.getElementById('maxTemp').innerHTML = `Max Temperature : <span class="text-white">${kelvinToCelsius(data.main.temp_max).toFixed(2)} °C</span>`;
         document.getElementById('pressure').innerHTML = `Pressure : <span class="text-white">${data.main.pressure}</span>`;
         document.getElementById('humidity').innerHTML = `Humidity : <span class="text-white">${data.main.humidity}</span>`;
         document.getElementById('windSpeed').innerHTML = `Wind Speed : <span class="text-white">${data.wind.speed} km/hr</span>`;
