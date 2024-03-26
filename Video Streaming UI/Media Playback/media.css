@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.bizz-studio-playback {
+    display: flex;
+    padding: 50px;
+}
+
+.content-playback-media {
+    font-size: 10px;
+}
+
+.container {
+    display: block;
+}
+
+.account-credas {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments {
+    background-color: #e5e5e5;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 28px 10px;
+}
+
+.comment-section {
+    padding: 15px;
+    border-top: 2px solid;
+}
+
+.playback img:nth-child(1) {
+    border-radius: 18px;
+}
+
+.description p {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icons-beside-video {
+    width: 45px;
+}
+
+.here-we-go {
+    flex-direction: column;
+}
+
+.column-item img {
+    width: 350px;
+    height: 140px;
+}
