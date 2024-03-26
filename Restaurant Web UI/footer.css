@@ -1,0 +1,102 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#pizza {
+    width: 60px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    background-color: #ffffffc8;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: yellow;
+    color: darkgreen;
+    border-radius: 8px;
+    outline: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #0007296a;
+    color: black;
+    padding: 55px 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.column h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bolder;
+}
+
+.column ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: rgb(71, 0, 71);
+    font-weight: 600;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media img {
+    width: 45px;
+}

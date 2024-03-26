@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.box-1 {
+    display: flex;
+    padding: 25px;
+    gap: 35px;
+}
+
+.box-1 img {
+    width: 205px;
+    height: 185px;
+    border-radius: 12px;
+}
+
+.about-us-sec {
+    background-color: #ffff76;
+    color: rgb(0, 62, 0);
+}
